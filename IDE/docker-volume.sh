@@ -1,4 +1,4 @@
-# 볼륨 새성 (volume name : cloud-cicd-src)
+# 볼륨 생성 (volume name : cloud-cicd-src)
 docker volume create  \
 --opt device="/Users/changhee/goodee-cicd/src" \
 --opt o=bind --opt type=none cloud-cicd-src
