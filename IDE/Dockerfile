@@ -1,8 +1,10 @@
 # https://hub.docker.com/r/linuxserver/code-server
+# FROM 이미지 버전을 latest로 두는 순간,,, 쓰레기가 되어버린다.
 FROM linuxserver/code-server:4.93.1
 
 # ENV for Code-server (VSCode)
 ENV TZ="Asia/Seoul"
+# 외부에 존재하는 docker.sock 파일과 링크되기 위해서는 프로세스 ID를 0으로 지정해야함
 ENV PUID=0
 ENV PGID=1000
 
